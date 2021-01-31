@@ -17,7 +17,9 @@ struct BookMainView: View {
         NavigationView {
             VStack {
                 if viewModel.bookListItems.count == 0 {
-                    WelcomeView()
+                    ScrollView(.vertical) {
+                        WelcomeView()
+                    }
                 } else {
                     BookListView(showBookHighlightsSheet: $showBookDetailSheet,
                                  bookListItems: $viewModel.bookListItems,

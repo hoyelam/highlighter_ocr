@@ -60,8 +60,6 @@
 		17D6973425C2F9CA0060D051 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 17D6973325C2F9CA0060D051 /* SwiftUIX */; };
 		17E5658325C34F6E009E3E30 /* HighlightRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5658225C34F6E009E3E30 /* HighlightRowView.swift */; };
 		17E5658425C34F6E009E3E30 /* HighlightRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5658225C34F6E009E3E30 /* HighlightRowView.swift */; };
-		17E5659325C35B07009E3E30 /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5659225C35B07009E3E30 /* UserDefaults+Ext.swift */; };
-		17E5659425C35B07009E3E30 /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5659225C35B07009E3E30 /* UserDefaults+Ext.swift */; };
 		17E660AF25C4B3E600631237 /* AppSheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E660AE25C4B3E600631237 /* AppSheetModifier.swift */; };
 		17E660B025C4B3E600631237 /* AppSheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E660AE25C4B3E600631237 /* AppSheetModifier.swift */; };
 		17E660B925C4C19A00631237 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E660B825C4C19A00631237 /* CameraViewController.swift */; };
@@ -70,8 +68,6 @@
 		17E660C325C5AB9E00631237 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E660C125C5AB9E00631237 /* UIImage+Ext.swift */; };
 		17F2E61B25C0827700B42B97 /* Envision_Highlighter_AssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E60825C0827500B42B97 /* Envision_Highlighter_AssignmentApp.swift */; };
 		17F2E61C25C0827700B42B97 /* Envision_Highlighter_AssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E60825C0827500B42B97 /* Envision_Highlighter_AssignmentApp.swift */; };
-		17F2E61D25C0827700B42B97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E60925C0827500B42B97 /* ContentView.swift */; };
-		17F2E61E25C0827700B42B97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E60925C0827500B42B97 /* ContentView.swift */; };
 		17F2E61F25C0827700B42B97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F2E60A25C0827700B42B97 /* Assets.xcassets */; };
 		17F2E62025C0827700B42B97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F2E60A25C0827700B42B97 /* Assets.xcassets */; };
 		17F2E62C25C0829E00B42B97 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E62B25C0829E00B42B97 /* WelcomeView.swift */; };
@@ -128,12 +124,10 @@
 		17D6970725C2F0E50060D051 /* UIResponder+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Ext.swift"; sourceTree = "<group>"; };
 		17D6970C25C2F10C0060D051 /* KeyboardAdaptive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAdaptive.swift; sourceTree = "<group>"; };
 		17E5658225C34F6E009E3E30 /* HighlightRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightRowView.swift; sourceTree = "<group>"; };
-		17E5659225C35B07009E3E30 /* UserDefaults+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ext.swift"; sourceTree = "<group>"; };
 		17E660AE25C4B3E600631237 /* AppSheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSheetModifier.swift; sourceTree = "<group>"; };
 		17E660B825C4C19A00631237 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		17E660C125C5AB9E00631237 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		17F2E60825C0827500B42B97 /* Envision_Highlighter_AssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Envision_Highlighter_AssignmentApp.swift; sourceTree = "<group>"; };
-		17F2E60925C0827500B42B97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		17F2E60A25C0827700B42B97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17F2E60F25C0827700B42B97 /* Envision-Highlighter-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Envision-Highlighter-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F2E61225C0827700B42B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -251,7 +245,6 @@
 		17BD3B1925C083B600863F2F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				17E5659125C35AF3009E3E30 /* UserDefaults */,
 				173CC26325C324BB0030E1AA /* Logs */,
 				17BD3B2025C0867C00863F2F /* UIKit */,
 				17BD3B1B25C0840200863F2F /* SwiftUI */,
@@ -262,6 +255,7 @@
 		17BD3B1B25C0840200863F2F /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				17EFC26C25C77524005437D6 /* ViewControllers */,
 				17D696FE25C2F0230060D051 /* Publishers */,
 				1704F3B225C090B000C171A0 /* Modifiers */,
 				17BD3B2C25C08A2F00863F2F /* Extensions */,
@@ -286,7 +280,6 @@
 			children = (
 				17BD3B2725C08A2300863F2F /* Triangle.swift */,
 				1704F39F25C08BB700C171A0 /* Arrow.swift */,
-				17E660B825C4C19A00631237 /* CameraViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -338,20 +331,20 @@
 			path = Publishers;
 			sourceTree = "<group>";
 		};
-		17E5659125C35AF3009E3E30 /* UserDefaults */ = {
-			isa = PBXGroup;
-			children = (
-				17E5659225C35B07009E3E30 /* UserDefaults+Ext.swift */,
-			);
-			path = UserDefaults;
-			sourceTree = "<group>";
-		};
 		17E660B725C4C16600631237 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
 				1748D26425C5E51C0098D924 /* CameraHighlightView.swift */,
 			);
 			path = Camera;
+			sourceTree = "<group>";
+		};
+		17EFC26C25C77524005437D6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				17E660B825C4C19A00631237 /* CameraViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		17F2E60225C0827500B42B97 = {
@@ -374,7 +367,6 @@
 				1797636425C31BFB00947723 /* ViewModels */,
 				1704F3AF25C08DFB00C171A0 /* Localization */,
 				17F2E60825C0827500B42B97 /* Envision_Highlighter_AssignmentApp.swift */,
-				17F2E60925C0827500B42B97 /* ContentView.swift */,
 				17F2E60A25C0827700B42B97 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -589,7 +581,6 @@
 				1704C7EA25C2C30D0097A413 /* DatabaseManager.swift in Sources */,
 				178611E825C48CE8008DF08E /* BookMainView.swift in Sources */,
 				17F3344025C09661007A9FA2 /* AppDatabase.swift in Sources */,
-				17F2E61D25C0827700B42B97 /* ContentView.swift in Sources */,
 				17BD3B1D25C0840D00863F2F /* Color+Ext.swift in Sources */,
 				1748D26E25C5EE0A0098D924 /* CameraViewModel.swift in Sources */,
 				17D15DCD25C327D8000CDA41 /* CardScreenModifier.swift in Sources */,
@@ -612,7 +603,6 @@
 				17D696A525C2C4A80060D051 /* Book.swift in Sources */,
 				17F3C79625C6C9E9000631FE /* UIView+Ext.swift in Sources */,
 				173CC26525C324C90030E1AA /* AppOSLog.swift in Sources */,
-				17E5659325C35B07009E3E30 /* UserDefaults+Ext.swift in Sources */,
 				17D696AD25C2C68F0060D051 /* Highlight.swift in Sources */,
 				17E660AF25C4B3E600631237 /* AppSheetModifier.swift in Sources */,
 				17F2E62C25C0829E00B42B97 /* WelcomeView.swift in Sources */,
@@ -630,7 +620,6 @@
 				1704C7EB25C2C30D0097A413 /* DatabaseManager.swift in Sources */,
 				17F3344725C096B8007A9FA2 /* AppDatabase.swift in Sources */,
 				17D6971D25C2F22D0060D051 /* Keyboard.swift in Sources */,
-				17F2E61E25C0827700B42B97 /* ContentView.swift in Sources */,
 				17F3C79725C6C9E9000631FE /* UIView+Ext.swift in Sources */,
 				17136A3B25C4AF5E005BD7FA /* BookHighlightsView.swift in Sources */,
 				17F2E62D25C0829E00B42B97 /* WelcomeView.swift in Sources */,
@@ -654,7 +643,6 @@
 				17BD3B3525C08A5900863F2F /* Color+Ext.swift in Sources */,
 				1704C7E525C2BF9E0097A413 /* Persistence.swift in Sources */,
 				17E660C325C5AB9E00631237 /* UIImage+Ext.swift in Sources */,
-				17E5659425C35B07009E3E30 /* UserDefaults+Ext.swift in Sources */,
 				175A045825C4B0F8006AA1A9 /* EnterBookNameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

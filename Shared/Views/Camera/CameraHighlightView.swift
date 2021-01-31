@@ -23,11 +23,13 @@ struct CameraHighlightView: View {
                     .foregroundColor(Color.text)
                     .padding(.top)
                 
-                Text("\(viewModel.previewHighlight)")
-                    .font(.title2)
-                    .foregroundColor(Color.text)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .padding(.top, 56)
+                ScrollView(.vertical) {
+                    Text("\(viewModel.previewHighlight)")
+                        .font(.title2)
+                        .foregroundColor(Color.text)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .padding(.top)
+                }
                 
                 if let image = viewModel.image {
                     Image(uiImage: image)
@@ -99,7 +101,7 @@ struct CameraHighlightView: View {
     }
 }
 
-// TODO: Simulator Support Camera Dummy
+// TODO: Simulator Support for Camera Dummy
 //
 //struct CameraHighlightView_Previews: PreviewProvider {
 //    static var previews: some View {

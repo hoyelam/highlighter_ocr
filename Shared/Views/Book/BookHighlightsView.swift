@@ -52,19 +52,20 @@ struct BookHighlightsView: View {
             Divider()
                 .background(Color.white)
             
-            if viewModel.highlights.count > 0 {
-                ScrollView {
+            ScrollView(.vertical) {
+                if viewModel.highlights.count > 0 {
                     LazyVGrid(columns: [GridItem()], spacing: 16) {
                         ForEach(viewModel.highlights) { highlight in
                             HighlightRowView(highlight: highlight)
                         }
                     }
-                }
-            } else {
-                VStack(alignment: .leading) {
-                    Text("no_highlights_message")
-                        .font(.title3)
-                        .foregroundColor(.text)
+                } else {
+                    VStack(alignment: .leading) {
+                        Text("no_highlights_message")
+                            .font(.title3)
+                            .foregroundColor(.text)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
                 }
             }
             

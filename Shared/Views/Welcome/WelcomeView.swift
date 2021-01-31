@@ -13,8 +13,7 @@ struct WelcomeView: View {
             Text("welcome_screen_title")
                 .font(.title)
                 .foregroundColor(.text)
-            
-            Spacer()
+                .fixedSize(horizontal: false, vertical: true)
             
             VStack(alignment: .center, spacing: 0) {
                 Rectangle()
@@ -27,6 +26,7 @@ struct WelcomeView: View {
                     .frame(width: 32, height: 32)
             }
             .padding([.vertical])
+            .frame(minHeight: 360)
             .accessibility(label: Text("welcome_arrow_accessibility_label"))
             
             Spacer()
