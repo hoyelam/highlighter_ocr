@@ -11,6 +11,12 @@ extension Color {
     static var background = Color("BGColor")
     static var secondaryBackground = Color("SecondaryBGColor")
     
+    /// Default background color for textfields
+    static var textFieldBackground = Color("TextFieldBGColor")
+    
+    /// Default background color for list and row elemenets
+    static var elementBackground = Color("ElementBGColor")
+    
     /// Envision Highlighter Default Text Color (Title, Headlines, Body)
     static var text = Color("TextColor")
     

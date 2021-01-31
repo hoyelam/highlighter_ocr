@@ -6,3 +6,20 @@
 //
 
 import Foundation
+import os.log
+
+final class AppOSLog {
+    static func logError(class: AnyClass, error: Error) {
+        os_log("Error: %{public}@",
+               log: .default,
+               type: .fault,
+               String(describing: error))
+    }
+    
+    static func logError(class: AnyClass, error: String) {
+        os_log("Error: %{public}@",
+               log: .default,
+               type: .fault,
+               error)
+    }
+}

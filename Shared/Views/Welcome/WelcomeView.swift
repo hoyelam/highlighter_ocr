@@ -9,7 +9,30 @@ import SwiftUI
 
 struct WelcomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            Text("welcome_screen_title")
+                .font(.title)
+                .foregroundColor(.text)
+            
+            Spacer()
+            
+            VStack(alignment: .center, spacing: 0) {
+                Rectangle()
+                    .foregroundColor(.white)
+                    .frame(width: 16)
+                
+                Triangle()
+                    .foregroundColor(.white)
+                    .rotationEffect(Angle(degrees: 180))
+                    .frame(width: 32, height: 32)
+            }
+            .padding([.vertical])
+            .accessibility(label: Text("welcome_arrow_accessibility_label"))
+            
+            Spacer()
+        }
+        .background(Color.background)
+        
     }
 }
 
@@ -18,3 +41,4 @@ struct WelcomeView_Previews: PreviewProvider {
         WelcomeView()
     }
 }
+

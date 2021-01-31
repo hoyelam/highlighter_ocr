@@ -6,3 +6,51 @@
   
 */
 
+/* Welcome View */
+
+"welcome_screen_title" = "Welcome to Envision Highlighter. Enter the name of your book, highlight a phrase and save it for future references";
+
+"welcome_screen_button_text" = "Enter book name";
+
+"welcome_arrow_accessibility_label" = "Press the button below to enter a book";
+
+
+/* Add Book View */
+
+"add_book_view_title" = "Enter book name";
+
+"close_button_text" = "Close";
+
+"close_button_accessibility_text" = "Close Keyboard";
+
+"add_book_button_text" = "Add book";
+
+"enter_book_name_placeholder_textfield" = "Enter the title of your book...";
+
+"no_title_given_alert_title" = "No book title";
+
+"no_title_given_alert_message" = "A book title has to be given first";
+
+"return_last_view_label" = "Go back to the last screen";
+
+"okay" = "okay";
+
+
+/* Add Highlight View */
+
+"no_highlights_message" = "You currently don't have any highlighted text. Tap the button 'Add highlight' to start scanning phrase to highlight";
+
+"add_highlight_button_text" = "Add highlight";
+
+"add_another_highlight_button_text" = "+ Add another Highlight";
+
+
+/* Books List View */
+
+"press_to_see_highlight_accessibility_label %@" = "Press to see highlights of Book %@";
+
+"tap_anywhere_to_highlight" = "Tap anywhere on the screen to highlight";
+
+"try_again_text" = "Try again";
+
+

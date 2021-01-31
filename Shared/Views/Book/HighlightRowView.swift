@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct HighlightRowView: View {
+    var highlight: Highlight
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            Text(highlight.text)
+                .font(.body)
+                .foregroundColor(.text)
+            
+            Divider()
+                .background(Color.white)
+                
+        }
+        .background(Color.secondaryBackground)
     }
 }
 
 struct HighlightRowView_Previews: PreviewProvider {
     static var previews: some View {
-        HighlightRowView()
+        HighlightRowView(highlight: .newRandom(bookId: 0))
     }
 }

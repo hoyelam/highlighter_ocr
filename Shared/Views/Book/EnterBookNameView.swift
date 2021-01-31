@@ -13,6 +13,7 @@ struct EnterBookNameView: View {
     
     @State private var bookTitle: String = ""
     @State private var showNoTitleGivenAlert: Bool = false
+    @Binding var sheet: Bool
     
     var body: some View {
         NavigationView {
@@ -72,6 +73,7 @@ struct EnterBookNameView: View {
             
             CocoaTextField("", text: $bookTitle)
                 .foregroundColor(.white)
+                .disableAutocorrection(true)
         }
         .padding()
         .background(Color.textFieldBackground)
@@ -90,6 +92,7 @@ struct EnterBookNameView: View {
                 .foregroundColor(.text)
         }
         .mainButtonModifier()
+        .keyboardAdaptive()
         .alert(isPresented: self.$showNoTitleGivenAlert) {
             Alert(title: Text("no_title_given_alert_title"),
                   message: Text("no_title_given_alert_message"),
@@ -98,18 +101,21 @@ struct EnterBookNameView: View {
     }
     
     private var addBookButtonNavigationView: some View {
+        // BookHighlightView will automatically store the book
         NavigationLink(destination: BookHighlightsView(book: .init(id: nil,
-                                                                   title: bookTitle))) {
+                                                                   title: bookTitle),
+                                                       sheetBind: $sheet)) {
             Text("add_book_button_text")
                 .font(.title)
                 .foregroundColor(.text)
         }
         .mainButtonModifier()
+        .keyboardAdaptive()
     }
 }
 
 struct EnterBookNameView_Previews: PreviewProvider {
     static var previews: some View {
-        EnterBookNameView()
+        EnterBookNameView(sheet: .constant(true))
     }
 }

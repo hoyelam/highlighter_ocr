@@ -10,18 +10,39 @@ import SwiftUI
 struct BookHighlightsView: View {
     @Environment(\.presentationMode) var presentationMode
     @StateObject var viewModel: BookHighlightsViewModel
+    @Binding var sheetBind: Bool
     
-    init(book: Book, database: AppDatabase = AppDatabase.shared) {
+    @State private var showScanHighlighCamera: Bool = false
+    
+    init(book: Book, database: AppDatabase = AppDatabase.shared, sheetBind: Binding<Bool>) {
         let viewModel = BookHighlightsViewModel(book: book, database: database)
         _viewModel = StateObject(wrappedValue: viewModel)
+        _sheetBind = sheetBind
     }
     
-    init(viewModel: BookHighlightsViewModel) {
+    init(viewModel: BookHighlightsViewModel, sheetBind: Binding<Bool>) {
         _viewModel = StateObject(wrappedValue: viewModel)
+        _sheetBind = sheetBind
     }
     
     var body: some View {
         VStack(spacing: 16) {
+            HStack {
+                Button(action: {
+                    self.presentationMode.dismiss()
+                    self.sheetBind.toggle()
+                }) {
+                    Text("Back")
+                        .font(.body)
+                        .foregroundColor(.text)
+                        .padding(8)
+                        .background(Color.textFieldBackground)
+                        .cornerRadius(16)
+                }
+                
+                Spacer()
+            }
+            
             HStack(spacing: 16) {
                 Text("\(viewModel.book.title)")
                     .font(.title)
@@ -31,27 +52,45 @@ struct BookHighlightsView: View {
             Divider()
                 .background(Color.white)
             
-            ScrollView {
-                LazyVGrid(columns: [GridItem()], spacing: 16) {
-                    ForEach(viewModel.highlights) { highlight in
-                        HighlightRowView(highlight: highlight)
+            if viewModel.highlights.count > 0 {
+                ScrollView {
+                    LazyVGrid(columns: [GridItem()], spacing: 16) {
+                        ForEach(viewModel.highlights) { highlight in
+                            HighlightRowView(highlight: highlight)
+                        }
                     }
+                }
+            } else {
+                VStack(alignment: .leading) {
+                    Text("no_highlights_message")
+                        .font(.title3)
+                        .foregroundColor(.text)
                 }
             }
             
             Spacer()
             
             Button(action: {
-                
+                self.showScanHighlighCamera.toggle()
             }) {
                 Text("add_highlight_button_text")
                     .font(.title)
                     .foregroundColor(.text)
             }
             .mainButtonModifier()
+
+            .sheet(isPresented: $showScanHighlighCamera, content: {
+                CameraHighlightView() { highlightText in
+                    guard !highlightText.isEmpty else { return }
+                    self.viewModel.storeHighlight(text: highlightText)
+                    self.sheetBind.toggle()
+                }
+            })
         }
-        .cardScreenModifier()
+        .padding(.vertical)
+        .appSheetStyleModifier()
         .navigationBarHidden(true)
+        .onAppear(perform: viewModel.checkIfBookExistsInDb)
     }
 }
 
@@ -60,11 +99,8 @@ struct BookHighlightsView_Previews: PreviewProvider {
         let book = Book(id: 0, title: "Envision Road")
         BookHighlightsView(viewModel:
                             BookHighlightsViewModel(book: book,
-                                                    highlights: [.newRandom(bookId: book.id!),
-                                                                 .newRandom(bookId: book.id!),
-                                                                 .newRandom(bookId: book.id!),
-                                                                 .newRandom(bookId: book.id!),
-                                                                 .newRandom(bookId: book.id!),
-                                                                 .newRandom(bookId: book.id!),], database: try! AppDatabase.random()))
+                                                    highlights: [],
+                                                    database: try! AppDatabase.random()),
+                           sheetBind: .constant(true))
     }
 }

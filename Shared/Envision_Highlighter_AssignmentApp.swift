@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct Envision_Highlighter_AssignmentApp: App {
+    @State var image: UIImage? = nil
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BookMainView()
         }
     }
 }
+
+let screen = UIScreen.main.bounds
+

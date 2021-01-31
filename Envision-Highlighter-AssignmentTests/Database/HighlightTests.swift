@@ -6,6 +6,8 @@
 //
 
 import XCTest
+import GRDB
+@testable import Envision_Highlighter_Assignment
 
 class HighlightTests: XCTestCase {
 
@@ -17,16 +19,18 @@ class HighlightTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func test_insert() throws {
+        // Given
+        let database = AppDatabase.empty()
+        let manager = DatabaseManager(database: database)
+        var book = Book.newRandom()
+        try manager.saveBook(&book)
+        
+        // When
+        var highlight = Highlight(id: nil, bookId: book.id!, text: "Buy high sell higher")
+        try manager.saveHighlight(&highlight)
+        
+        // Then
+        XCTAssertNotNil(highlight.id)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

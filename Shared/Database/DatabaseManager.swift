@@ -26,7 +26,7 @@ extension DatabaseManager {
     func bookList() throws -> [Book] {
         try database.dbWriter.read { db in
             let request = Book
-                .all()
+                .annotated(with: Book.highlights.count)
                 .orderedByName()
                 
             return try Book.fetchAll(db, request)
@@ -51,7 +51,27 @@ extension DatabaseManager {
     /// Returns a publisher that tracks changes in books ordered by name
     func booksPublisher() -> AnyPublisher<[Book], Error> {
         ValueObservation
-            .tracking(Book.all().orderedByName().fetchAll)
+            .tracking { db in
+                let request = Book
+                    .annotated(with: Book.highlights.count)
+                    .orderedByName()
+                    
+                return try Book.fetchAll(db, request)
+            }
+            .publisher(in: database.dbWriter, scheduling: .immediate)
+            .eraseToAnyPublisher()
+    }
+    
+    /// Returns a publisher that tracks changes in books ordered by name
+    func booksListPublisher() -> AnyPublisher<[BookListItem], Error> {
+        ValueObservation
+            .tracking { db in
+                let request = Book
+                    .annotated(with: Book.highlights.count)
+                    .orderedByName()
+                    
+                return try BookListItem.fetchAll(db, request)
+            }
             .publisher(in: database.dbWriter, scheduling: .immediate)
             .eraseToAnyPublisher()
     }

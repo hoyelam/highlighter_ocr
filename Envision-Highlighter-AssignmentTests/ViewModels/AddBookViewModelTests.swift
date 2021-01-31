@@ -6,6 +6,8 @@
 //
 
 import XCTest
+import GRDB
+@testable import Envision_Highlighter_Assignment
 
 class AddBookViewModelTests: XCTestCase {
 
@@ -17,16 +19,26 @@ class AddBookViewModelTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func test_saveBook() throws {
+        // Given
+        let dbQueue = DatabaseQueue()
+        let appDatabase = try AppDatabase(dbQueue)
+        let viewModel = AddBookViewModel(database: appDatabase)
+        let expectedName = "Ain't no mountain high enough"
+        viewModel.newBook.title = expectedName
+        
+        // When
+        viewModel.saveNewBook()
+        
+        // Then
+        try dbQueue.read { db in
+            let books = try Book.fetchAll(db)
+            guard let fetchedBook = books.first else {
+                XCTFail("Book not stored correctly: \(String(describing: self))")
+                return
+            }
+            
+            XCTAssertEqual(fetchedBook.title, viewModel.newBook.title)
         }
     }
-
 }

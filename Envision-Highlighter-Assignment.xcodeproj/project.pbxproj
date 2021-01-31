@@ -3,19 +3,135 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1704C7E425C2BF9E0097A413 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1704C7E325C2BF9E0097A413 /* Persistence.swift */; };
+		1704C7E525C2BF9E0097A413 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1704C7E325C2BF9E0097A413 /* Persistence.swift */; };
+		1704C7EA25C2C30D0097A413 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1704C7E925C2C30D0097A413 /* DatabaseManager.swift */; };
+		1704C7EB25C2C30D0097A413 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1704C7E925C2C30D0097A413 /* DatabaseManager.swift */; };
+		1704F3A025C08BB700C171A0 /* Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1704F39F25C08BB700C171A0 /* Arrow.swift */; };
+		1704F3A125C08BB700C171A0 /* Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1704F39F25C08BB700C171A0 /* Arrow.swift */; };
+		1704F3A925C08DF200C171A0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1704F3AC25C08DF200C171A0 /* Localizable.strings */; };
+		1704F3AA25C08DF200C171A0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1704F3AC25C08DF200C171A0 /* Localizable.strings */; };
+		1704F3B425C090BD00C171A0 /* MainButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1704F3B325C090BD00C171A0 /* MainButtonModifier.swift */; };
+		1704F3B525C090BD00C171A0 /* MainButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1704F3B325C090BD00C171A0 /* MainButtonModifier.swift */; };
+		1704F3BC25C0939100C171A0 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 1704F3BB25C0939100C171A0 /* GRDB */; };
+		17136A1C25C49952005BD7FA /* BookMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178611EF25C48D0B008DF08E /* BookMainViewModel.swift */; };
+		17136A2025C49956005BD7FA /* AddBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1797636625C31C1F00947723 /* AddBookViewModel.swift */; };
+		17136A2425C49959005BD7FA /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178611FD25C4956C008DF08E /* BookListView.swift */; };
+		17136A2825C4995D005BD7FA /* BookMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178611E725C48CE8008DF08E /* BookMainView.swift */; };
+		17136A2E25C4A950005BD7FA /* EnterBookNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17136A2D25C4A950005BD7FA /* EnterBookNameView.swift */; };
+		17136A3B25C4AF5E005BD7FA /* BookHighlightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D15DDE25C33065000CDA41 /* BookHighlightsView.swift */; };
+		173CC26525C324C90030E1AA /* AppOSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173CC26425C324C90030E1AA /* AppOSLog.swift */; };
+		1748D26525C5E51C0098D924 /* CameraHighlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1748D26425C5E51C0098D924 /* CameraHighlightView.swift */; };
+		1748D26E25C5EE0A0098D924 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1748D26D25C5EE0A0098D924 /* CameraViewModel.swift */; };
+		1757160525C7667700D0CBD4 /* BookListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757160425C7667700D0CBD4 /* BookListItem.swift */; };
+		175A045825C4B0F8006AA1A9 /* EnterBookNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17136A2D25C4A950005BD7FA /* EnterBookNameView.swift */; };
+		178611E825C48CE8008DF08E /* BookMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178611E725C48CE8008DF08E /* BookMainView.swift */; };
+		178611F025C48D0B008DF08E /* BookMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178611EF25C48D0B008DF08E /* BookMainViewModel.swift */; };
+		178611FE25C4956C008DF08E /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178611FD25C4956C008DF08E /* BookListView.swift */; };
+		1797636725C31C1F00947723 /* AddBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1797636625C31C1F00947723 /* AddBookViewModel.swift */; };
+		17BD3B1D25C0840D00863F2F /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BD3B1C25C0840D00863F2F /* Color+Ext.swift */; };
+		17BD3B2225C0868600863F2F /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BD3B2125C0868600863F2F /* UIColor+Ext.swift */; };
+		17BD3B2825C08A2300863F2F /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BD3B2725C08A2300863F2F /* Triangle.swift */; };
+		17BD3B2F25C08A5200863F2F /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BD3B2725C08A2300863F2F /* Triangle.swift */; };
+		17BD3B3225C08A5700863F2F /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BD3B2125C0868600863F2F /* UIColor+Ext.swift */; };
+		17BD3B3525C08A5900863F2F /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BD3B1C25C0840D00863F2F /* Color+Ext.swift */; };
+		17D15DCD25C327D8000CDA41 /* CardScreenModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D15DCC25C327D8000CDA41 /* CardScreenModifier.swift */; };
+		17D15DCE25C327D8000CDA41 /* CardScreenModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D15DCC25C327D8000CDA41 /* CardScreenModifier.swift */; };
+		17D15DDF25C33065000CDA41 /* BookHighlightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D15DDE25C33065000CDA41 /* BookHighlightsView.swift */; };
+		17D15DE625C33085000CDA41 /* AddBookViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D15DE525C33085000CDA41 /* AddBookViewModelTests.swift */; };
+		17D15DF125C33337000CDA41 /* BookHighlightsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D15DF025C33337000CDA41 /* BookHighlightsViewModel.swift */; };
+		17D15DF225C33337000CDA41 /* BookHighlightsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D15DF025C33337000CDA41 /* BookHighlightsViewModel.swift */; };
+		17D696A525C2C4A80060D051 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D696A425C2C4A80060D051 /* Book.swift */; };
+		17D696AD25C2C68F0060D051 /* Highlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D696AC25C2C68F0060D051 /* Highlight.swift */; };
+		17D696BA25C2D48E0060D051 /* BookManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D696B925C2D48E0060D051 /* BookManagerTests.swift */; };
+		17D696C225C2E54D0060D051 /* BookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D696C125C2E54D0060D051 /* BookTests.swift */; };
+		17D696C725C2E7B60060D051 /* HighlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D696C625C2E7B60060D051 /* HighlightTests.swift */; };
+		17D696CC25C2E87A0060D051 /* AppDatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D696CB25C2E87A0060D051 /* AppDatabaseTests.swift */; };
+		17D6971125C2F2290060D051 /* KeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6970C25C2F10C0060D051 /* KeyboardAdaptive.swift */; };
+		17D6971525C2F2290060D051 /* KeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6970C25C2F10C0060D051 /* KeyboardAdaptive.swift */; };
+		17D6971925C2F22D0060D051 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D696FF25C2F02A0060D051 /* Keyboard.swift */; };
+		17D6971D25C2F22D0060D051 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D696FF25C2F02A0060D051 /* Keyboard.swift */; };
+		17D6972425C2F2350060D051 /* UIResponder+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6970725C2F0E50060D051 /* UIResponder+Ext.swift */; };
+		17D6972825C2F2360060D051 /* UIResponder+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6970725C2F0E50060D051 /* UIResponder+Ext.swift */; };
+		17D6973425C2F9CA0060D051 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 17D6973325C2F9CA0060D051 /* SwiftUIX */; };
+		17E5658325C34F6E009E3E30 /* HighlightRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5658225C34F6E009E3E30 /* HighlightRowView.swift */; };
+		17E5658425C34F6E009E3E30 /* HighlightRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5658225C34F6E009E3E30 /* HighlightRowView.swift */; };
+		17E5659325C35B07009E3E30 /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5659225C35B07009E3E30 /* UserDefaults+Ext.swift */; };
+		17E5659425C35B07009E3E30 /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5659225C35B07009E3E30 /* UserDefaults+Ext.swift */; };
+		17E660AF25C4B3E600631237 /* AppSheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E660AE25C4B3E600631237 /* AppSheetModifier.swift */; };
+		17E660B025C4B3E600631237 /* AppSheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E660AE25C4B3E600631237 /* AppSheetModifier.swift */; };
+		17E660B925C4C19A00631237 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E660B825C4C19A00631237 /* CameraViewController.swift */; };
+		17E660BA25C4C19A00631237 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E660B825C4C19A00631237 /* CameraViewController.swift */; };
+		17E660C225C5AB9E00631237 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E660C125C5AB9E00631237 /* UIImage+Ext.swift */; };
+		17E660C325C5AB9E00631237 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E660C125C5AB9E00631237 /* UIImage+Ext.swift */; };
 		17F2E61B25C0827700B42B97 /* Envision_Highlighter_AssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E60825C0827500B42B97 /* Envision_Highlighter_AssignmentApp.swift */; };
 		17F2E61C25C0827700B42B97 /* Envision_Highlighter_AssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E60825C0827500B42B97 /* Envision_Highlighter_AssignmentApp.swift */; };
 		17F2E61D25C0827700B42B97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E60925C0827500B42B97 /* ContentView.swift */; };
 		17F2E61E25C0827700B42B97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E60925C0827500B42B97 /* ContentView.swift */; };
 		17F2E61F25C0827700B42B97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F2E60A25C0827700B42B97 /* Assets.xcassets */; };
 		17F2E62025C0827700B42B97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F2E60A25C0827700B42B97 /* Assets.xcassets */; };
+		17F2E62C25C0829E00B42B97 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E62B25C0829E00B42B97 /* WelcomeView.swift */; };
+		17F2E62D25C0829E00B42B97 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2E62B25C0829E00B42B97 /* WelcomeView.swift */; };
+		17F3344025C09661007A9FA2 /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3343F25C09661007A9FA2 /* AppDatabase.swift */; };
+		17F3344725C096B8007A9FA2 /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3343F25C09661007A9FA2 /* AppDatabase.swift */; };
+		17F3C79625C6C9E9000631FE /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3C79525C6C9E9000631FE /* UIView+Ext.swift */; };
+		17F3C79725C6C9E9000631FE /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3C79525C6C9E9000631FE /* UIView+Ext.swift */; };
+		17F3C79C25C6C9FF000631FE /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3C79B25C6C9FF000631FE /* View+Ext.swift */; };
+		17F3C79D25C6C9FF000631FE /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3C79B25C6C9FF000631FE /* View+Ext.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1700A66025C0992B003F2D3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17F2E60325C0827500B42B97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17F2E60E25C0827700B42B97;
+			remoteInfo = "Envision-Highlighter-Assignment (iOS)";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1700A65B25C0992A003F2D3E /* Envision-Highlighter-AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Envision-Highlighter-AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1700A65F25C0992B003F2D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1704C7E325C2BF9E0097A413 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		1704C7E925C2C30D0097A413 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		1704F39F25C08BB700C171A0 /* Arrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrow.swift; sourceTree = "<group>"; };
+		1704F3AB25C08DF200C171A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1704F3B325C090BD00C171A0 /* MainButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonModifier.swift; sourceTree = "<group>"; };
+		17136A2D25C4A950005BD7FA /* EnterBookNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterBookNameView.swift; sourceTree = "<group>"; };
+		173CC26425C324C90030E1AA /* AppOSLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOSLog.swift; sourceTree = "<group>"; };
+		1748D26425C5E51C0098D924 /* CameraHighlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHighlightView.swift; sourceTree = "<group>"; };
+		1748D26D25C5EE0A0098D924 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		1757160425C7667700D0CBD4 /* BookListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListItem.swift; sourceTree = "<group>"; };
+		178611E725C48CE8008DF08E /* BookMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMainView.swift; sourceTree = "<group>"; };
+		178611EF25C48D0B008DF08E /* BookMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMainViewModel.swift; sourceTree = "<group>"; };
+		178611FD25C4956C008DF08E /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
+		1797636625C31C1F00947723 /* AddBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookViewModel.swift; sourceTree = "<group>"; };
+		17BD3B1C25C0840D00863F2F /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		17BD3B2125C0868600863F2F /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		17BD3B2725C08A2300863F2F /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		17D15DCC25C327D8000CDA41 /* CardScreenModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScreenModifier.swift; sourceTree = "<group>"; };
+		17D15DDE25C33065000CDA41 /* BookHighlightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHighlightsView.swift; sourceTree = "<group>"; };
+		17D15DE525C33085000CDA41 /* AddBookViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookViewModelTests.swift; sourceTree = "<group>"; };
+		17D15DF025C33337000CDA41 /* BookHighlightsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHighlightsViewModel.swift; sourceTree = "<group>"; };
+		17D696A425C2C4A80060D051 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		17D696AC25C2C68F0060D051 /* Highlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Highlight.swift; sourceTree = "<group>"; };
+		17D696B925C2D48E0060D051 /* BookManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookManagerTests.swift; sourceTree = "<group>"; };
+		17D696C125C2E54D0060D051 /* BookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTests.swift; sourceTree = "<group>"; };
+		17D696C625C2E7B60060D051 /* HighlightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightTests.swift; sourceTree = "<group>"; };
+		17D696CB25C2E87A0060D051 /* AppDatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabaseTests.swift; sourceTree = "<group>"; };
+		17D696FF25C2F02A0060D051 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		17D6970725C2F0E50060D051 /* UIResponder+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Ext.swift"; sourceTree = "<group>"; };
+		17D6970C25C2F10C0060D051 /* KeyboardAdaptive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAdaptive.swift; sourceTree = "<group>"; };
+		17E5658225C34F6E009E3E30 /* HighlightRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightRowView.swift; sourceTree = "<group>"; };
+		17E5659225C35B07009E3E30 /* UserDefaults+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ext.swift"; sourceTree = "<group>"; };
+		17E660AE25C4B3E600631237 /* AppSheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSheetModifier.swift; sourceTree = "<group>"; };
+		17E660B825C4C19A00631237 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		17E660C125C5AB9E00631237 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		17F2E60825C0827500B42B97 /* Envision_Highlighter_AssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Envision_Highlighter_AssignmentApp.swift; sourceTree = "<group>"; };
 		17F2E60925C0827500B42B97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		17F2E60A25C0827700B42B97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -24,13 +140,26 @@
 		17F2E61725C0827700B42B97 /* Envision-Highlighter-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Envision-Highlighter-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F2E61925C0827700B42B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17F2E61A25C0827700B42B97 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		17F2E62B25C0829E00B42B97 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		17F3343F25C09661007A9FA2 /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
+		17F3C79525C6C9E9000631FE /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		17F3C79B25C6C9FF000631FE /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1700A65825C0992A003F2D3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17F2E60C25C0827700B42B97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1704F3BC25C0939100C171A0 /* GRDB in Frameworks */,
+				17D6973425C2F9CA0060D051 /* SwiftUIX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,12 +173,194 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1700A65C25C0992B003F2D3E /* Envision-Highlighter-AssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				17D15DE425C33069000CDA41 /* ViewModels */,
+				1700A66825C09933003F2D3E /* Database */,
+				1700A65F25C0992B003F2D3E /* Info.plist */,
+			);
+			path = "Envision-Highlighter-AssignmentTests";
+			sourceTree = "<group>";
+		};
+		1700A66825C09933003F2D3E /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				17D696CB25C2E87A0060D051 /* AppDatabaseTests.swift */,
+				17D696B925C2D48E0060D051 /* BookManagerTests.swift */,
+				17D696C125C2E54D0060D051 /* BookTests.swift */,
+				17D696C625C2E7B60060D051 /* HighlightTests.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		1704F3AF25C08DFB00C171A0 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				1704F3AC25C08DF200C171A0 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		1704F3B225C090B000C171A0 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				1704F3B325C090BD00C171A0 /* MainButtonModifier.swift */,
+				17D6970C25C2F10C0060D051 /* KeyboardAdaptive.swift */,
+				17D15DCC25C327D8000CDA41 /* CardScreenModifier.swift */,
+				17E660AE25C4B3E600631237 /* AppSheetModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		173CC26325C324BB0030E1AA /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				173CC26425C324C90030E1AA /* AppOSLog.swift */,
+			);
+			path = Logs;
+			sourceTree = "<group>";
+		};
+		1748D26C25C5EDFE0098D924 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				1748D26D25C5EE0A0098D924 /* CameraViewModel.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		1797636425C31BFB00947723 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1748D26C25C5EDFE0098D924 /* Camera */,
+				1797636525C31C0E00947723 /* Book */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1797636525C31C0E00947723 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				1797636625C31C1F00947723 /* AddBookViewModel.swift */,
+				17D15DF025C33337000CDA41 /* BookHighlightsViewModel.swift */,
+				178611EF25C48D0B008DF08E /* BookMainViewModel.swift */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		17BD3B1925C083B600863F2F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				17E5659125C35AF3009E3E30 /* UserDefaults */,
+				173CC26325C324BB0030E1AA /* Logs */,
+				17BD3B2025C0867C00863F2F /* UIKit */,
+				17BD3B1B25C0840200863F2F /* SwiftUI */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		17BD3B1B25C0840200863F2F /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				17D696FE25C2F0230060D051 /* Publishers */,
+				1704F3B225C090B000C171A0 /* Modifiers */,
+				17BD3B2C25C08A2F00863F2F /* Extensions */,
+				17BD3B2B25C08A2600863F2F /* Views */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		17BD3B2025C0867C00863F2F /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				17BD3B2125C0868600863F2F /* UIColor+Ext.swift */,
+				17D6970725C2F0E50060D051 /* UIResponder+Ext.swift */,
+				17E660C125C5AB9E00631237 /* UIImage+Ext.swift */,
+				17F3C79525C6C9E9000631FE /* UIView+Ext.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		17BD3B2B25C08A2600863F2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17BD3B2725C08A2300863F2F /* Triangle.swift */,
+				1704F39F25C08BB700C171A0 /* Arrow.swift */,
+				17E660B825C4C19A00631237 /* CameraViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		17BD3B2C25C08A2F00863F2F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				17BD3B1C25C0840D00863F2F /* Color+Ext.swift */,
+				17F3C79B25C6C9FF000631FE /* View+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		17D15DE425C33069000CDA41 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				17D15DE525C33085000CDA41 /* AddBookViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		17D696A325C2C4A20060D051 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				17D696A425C2C4A80060D051 /* Book.swift */,
+				17D696AC25C2C68F0060D051 /* Highlight.swift */,
+				1757160425C7667700D0CBD4 /* BookListItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		17D696D325C2EC6A0060D051 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				17D15DDE25C33065000CDA41 /* BookHighlightsView.swift */,
+				178611FD25C4956C008DF08E /* BookListView.swift */,
+				178611E725C48CE8008DF08E /* BookMainView.swift */,
+				17136A2D25C4A950005BD7FA /* EnterBookNameView.swift */,
+				17E5658225C34F6E009E3E30 /* HighlightRowView.swift */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		17D696FE25C2F0230060D051 /* Publishers */ = {
+			isa = PBXGroup;
+			children = (
+				17D696FF25C2F02A0060D051 /* Keyboard.swift */,
+			);
+			path = Publishers;
+			sourceTree = "<group>";
+		};
+		17E5659125C35AF3009E3E30 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				17E5659225C35B07009E3E30 /* UserDefaults+Ext.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		17E660B725C4C16600631237 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				1748D26425C5E51C0098D924 /* CameraHighlightView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		17F2E60225C0827500B42B97 = {
 			isa = PBXGroup;
 			children = (
 				17F2E60725C0827500B42B97 /* Shared */,
 				17F2E61125C0827700B42B97 /* iOS */,
 				17F2E61825C0827700B42B97 /* macOS */,
+				1700A65C25C0992B003F2D3E /* Envision-Highlighter-AssignmentTests */,
 				17F2E61025C0827700B42B97 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +368,11 @@
 		17F2E60725C0827500B42B97 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				17F3343E25C09650007A9FA2 /* Database */,
+				17BD3B1925C083B600863F2F /* Helpers */,
+				17F2E63025C082A300B42B97 /* Views */,
+				1797636425C31BFB00947723 /* ViewModels */,
+				1704F3AF25C08DFB00C171A0 /* Localization */,
 				17F2E60825C0827500B42B97 /* Envision_Highlighter_AssignmentApp.swift */,
 				17F2E60925C0827500B42B97 /* ContentView.swift */,
 				17F2E60A25C0827700B42B97 /* Assets.xcassets */,
@@ -69,6 +385,7 @@
 			children = (
 				17F2E60F25C0827700B42B97 /* Envision-Highlighter-Assignment.app */,
 				17F2E61725C0827700B42B97 /* Envision-Highlighter-Assignment.app */,
+				1700A65B25C0992A003F2D3E /* Envision-Highlighter-AssignmentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,9 +407,56 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		17F2E63025C082A300B42B97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17E660B725C4C16600631237 /* Camera */,
+				17D696D325C2EC6A0060D051 /* Book */,
+				17F2E63125C082A800B42B97 /* Welcome */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		17F2E63125C082A800B42B97 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				17F2E62B25C0829E00B42B97 /* WelcomeView.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		17F3343E25C09650007A9FA2 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				17D696A325C2C4A20060D051 /* Models */,
+				17F3343F25C09661007A9FA2 /* AppDatabase.swift */,
+				1704C7E325C2BF9E0097A413 /* Persistence.swift */,
+				1704C7E925C2C30D0097A413 /* DatabaseManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1700A65A25C0992A003F2D3E /* Envision-Highlighter-AssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1700A66425C0992B003F2D3E /* Build configuration list for PBXNativeTarget "Envision-Highlighter-AssignmentTests" */;
+			buildPhases = (
+				1700A65725C0992A003F2D3E /* Sources */,
+				1700A65825C0992A003F2D3E /* Frameworks */,
+				1700A65925C0992A003F2D3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1700A66125C0992B003F2D3E /* PBXTargetDependency */,
+			);
+			name = "Envision-Highlighter-AssignmentTests";
+			productName = "Envision-Highlighter-AssignmentTests";
+			productReference = 1700A65B25C0992A003F2D3E /* Envision-Highlighter-AssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		17F2E60E25C0827700B42B97 /* Envision-Highlighter-Assignment (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17F2E62325C0827700B42B97 /* Build configuration list for PBXNativeTarget "Envision-Highlighter-Assignment (iOS)" */;
@@ -106,6 +470,10 @@
 			dependencies = (
 			);
 			name = "Envision-Highlighter-Assignment (iOS)";
+			packageProductDependencies = (
+				1704F3BB25C0939100C171A0 /* GRDB */,
+				17D6973325C2F9CA0060D051 /* SwiftUIX */,
+			);
 			productName = "Envision-Highlighter-Assignment (iOS)";
 			productReference = 17F2E60F25C0827700B42B97 /* Envision-Highlighter-Assignment.app */;
 			productType = "com.apple.product-type.application";
@@ -134,8 +502,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					1700A65A25C0992A003F2D3E = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 17F2E60E25C0827700B42B97;
+					};
 					17F2E60E25C0827700B42B97 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -153,22 +525,35 @@
 				Base,
 			);
 			mainGroup = 17F2E60225C0827500B42B97;
+			packageReferences = (
+				1704F3BA25C0939100C171A0 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+				17D6973225C2F9CA0060D051 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+			);
 			productRefGroup = 17F2E61025C0827700B42B97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				17F2E60E25C0827700B42B97 /* Envision-Highlighter-Assignment (iOS) */,
 				17F2E61625C0827700B42B97 /* Envision-Highlighter-Assignment (macOS) */,
+				1700A65A25C0992A003F2D3E /* Envision-Highlighter-AssignmentTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1700A65925C0992A003F2D3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17F2E60D25C0827700B42B97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				17F2E61F25C0827700B42B97 /* Assets.xcassets in Resources */,
+				1704F3A925C08DF200C171A0 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,18 +562,64 @@
 			buildActionMask = 2147483647;
 			files = (
 				17F2E62025C0827700B42B97 /* Assets.xcassets in Resources */,
+				1704F3AA25C08DF200C171A0 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1700A65725C0992A003F2D3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D696C725C2E7B60060D051 /* HighlightTests.swift in Sources */,
+				17D696C225C2E54D0060D051 /* BookTests.swift in Sources */,
+				17D696CC25C2E87A0060D051 /* AppDatabaseTests.swift in Sources */,
+				17D696BA25C2D48E0060D051 /* BookManagerTests.swift in Sources */,
+				17D15DE625C33085000CDA41 /* AddBookViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17F2E60B25C0827700B42B97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F3C79C25C6C9FF000631FE /* View+Ext.swift in Sources */,
+				1704C7EA25C2C30D0097A413 /* DatabaseManager.swift in Sources */,
+				178611E825C48CE8008DF08E /* BookMainView.swift in Sources */,
+				17F3344025C09661007A9FA2 /* AppDatabase.swift in Sources */,
 				17F2E61D25C0827700B42B97 /* ContentView.swift in Sources */,
+				17BD3B1D25C0840D00863F2F /* Color+Ext.swift in Sources */,
+				1748D26E25C5EE0A0098D924 /* CameraViewModel.swift in Sources */,
+				17D15DCD25C327D8000CDA41 /* CardScreenModifier.swift in Sources */,
+				17BD3B2225C0868600863F2F /* UIColor+Ext.swift in Sources */,
+				178611FE25C4956C008DF08E /* BookListView.swift in Sources */,
+				17D6971125C2F2290060D051 /* KeyboardAdaptive.swift in Sources */,
+				17D6972425C2F2350060D051 /* UIResponder+Ext.swift in Sources */,
+				1797636725C31C1F00947723 /* AddBookViewModel.swift in Sources */,
+				1704F3B425C090BD00C171A0 /* MainButtonModifier.swift in Sources */,
+				17BD3B2825C08A2300863F2F /* Triangle.swift in Sources */,
+				178611F025C48D0B008DF08E /* BookMainViewModel.swift in Sources */,
+				17E660B925C4C19A00631237 /* CameraViewController.swift in Sources */,
+				1748D26525C5E51C0098D924 /* CameraHighlightView.swift in Sources */,
+				17E660C225C5AB9E00631237 /* UIImage+Ext.swift in Sources */,
+				17136A2E25C4A950005BD7FA /* EnterBookNameView.swift in Sources */,
+				17E5658325C34F6E009E3E30 /* HighlightRowView.swift in Sources */,
+				1757160525C7667700D0CBD4 /* BookListItem.swift in Sources */,
+				1704F3A025C08BB700C171A0 /* Arrow.swift in Sources */,
+				17D6971925C2F22D0060D051 /* Keyboard.swift in Sources */,
+				17D696A525C2C4A80060D051 /* Book.swift in Sources */,
+				17F3C79625C6C9E9000631FE /* UIView+Ext.swift in Sources */,
+				173CC26525C324C90030E1AA /* AppOSLog.swift in Sources */,
+				17E5659325C35B07009E3E30 /* UserDefaults+Ext.swift in Sources */,
+				17D696AD25C2C68F0060D051 /* Highlight.swift in Sources */,
+				17E660AF25C4B3E600631237 /* AppSheetModifier.swift in Sources */,
+				17F2E62C25C0829E00B42B97 /* WelcomeView.swift in Sources */,
+				17D15DF125C33337000CDA41 /* BookHighlightsViewModel.swift in Sources */,
+				17D15DDF25C33065000CDA41 /* BookHighlightsView.swift in Sources */,
 				17F2E61B25C0827700B42B97 /* Envision_Highlighter_AssignmentApp.swift in Sources */,
+				1704C7E425C2BF9E0097A413 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,14 +627,105 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1704C7EB25C2C30D0097A413 /* DatabaseManager.swift in Sources */,
+				17F3344725C096B8007A9FA2 /* AppDatabase.swift in Sources */,
+				17D6971D25C2F22D0060D051 /* Keyboard.swift in Sources */,
 				17F2E61E25C0827700B42B97 /* ContentView.swift in Sources */,
+				17F3C79725C6C9E9000631FE /* UIView+Ext.swift in Sources */,
+				17136A3B25C4AF5E005BD7FA /* BookHighlightsView.swift in Sources */,
+				17F2E62D25C0829E00B42B97 /* WelcomeView.swift in Sources */,
+				17136A2425C49959005BD7FA /* BookListView.swift in Sources */,
+				17136A2025C49956005BD7FA /* AddBookViewModel.swift in Sources */,
+				17D6972825C2F2360060D051 /* UIResponder+Ext.swift in Sources */,
+				17BD3B3225C08A5700863F2F /* UIColor+Ext.swift in Sources */,
+				1704F3B525C090BD00C171A0 /* MainButtonModifier.swift in Sources */,
+				17E660B025C4B3E600631237 /* AppSheetModifier.swift in Sources */,
+				17D15DF225C33337000CDA41 /* BookHighlightsViewModel.swift in Sources */,
 				17F2E61C25C0827700B42B97 /* Envision_Highlighter_AssignmentApp.swift in Sources */,
+				17E5658425C34F6E009E3E30 /* HighlightRowView.swift in Sources */,
+				17D6971525C2F2290060D051 /* KeyboardAdaptive.swift in Sources */,
+				17136A1C25C49952005BD7FA /* BookMainViewModel.swift in Sources */,
+				17E660BA25C4C19A00631237 /* CameraViewController.swift in Sources */,
+				17F3C79D25C6C9FF000631FE /* View+Ext.swift in Sources */,
+				17136A2825C4995D005BD7FA /* BookMainView.swift in Sources */,
+				1704F3A125C08BB700C171A0 /* Arrow.swift in Sources */,
+				17D15DCE25C327D8000CDA41 /* CardScreenModifier.swift in Sources */,
+				17BD3B2F25C08A5200863F2F /* Triangle.swift in Sources */,
+				17BD3B3525C08A5900863F2F /* Color+Ext.swift in Sources */,
+				1704C7E525C2BF9E0097A413 /* Persistence.swift in Sources */,
+				17E660C325C5AB9E00631237 /* UIImage+Ext.swift in Sources */,
+				17E5659425C35B07009E3E30 /* UserDefaults+Ext.swift in Sources */,
+				175A045825C4B0F8006AA1A9 /* EnterBookNameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1700A66125C0992B003F2D3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17F2E60E25C0827700B42B97 /* Envision-Highlighter-Assignment (iOS) */;
+			targetProxy = 1700A66025C0992B003F2D3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1704F3AC25C08DF200C171A0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1704F3AB25C08DF200C171A0 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		1700A66225C0992B003F2D3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6D2V789F7;
+				INFOPLIST_FILE = "Envision-Highlighter-AssignmentTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hoyelam.Envision-Highlighter-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Envision-Highlighter-Assignment.app/Envision-Highlighter-Assignment";
+			};
+			name = Debug;
+		};
+		1700A66325C0992B003F2D3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6D2V789F7;
+				INFOPLIST_FILE = "Envision-Highlighter-AssignmentTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hoyelam.Envision-Highlighter-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Envision-Highlighter-Assignment.app/Envision-Highlighter-Assignment";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		17F2E62125C0827700B42B97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -366,6 +888,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = P6D2V789F7;
@@ -390,6 +913,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = P6D2V789F7;
@@ -411,6 +935,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1700A66425C0992B003F2D3E /* Build configuration list for PBXNativeTarget "Envision-Highlighter-AssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1700A66225C0992B003F2D3E /* Debug */,
+				1700A66325C0992B003F2D3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		17F2E60625C0827500B42B97 /* Build configuration list for PBXProject "Envision-Highlighter-Assignment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -439,6 +972,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1704F3BA25C0939100C171A0 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+		17D6973225C2F9CA0060D051 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1704F3BB25C0939100C171A0 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1704F3BA25C0939100C171A0 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+		17D6973325C2F9CA0060D051 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17D6973225C2F9CA0060D051 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 17F2E60325C0827500B42B97 /* Project object */;
 }
